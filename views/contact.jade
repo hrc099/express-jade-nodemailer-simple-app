@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container
+        form(method='post', action='contact/send')
+            h1 Kontakt
+            .form-group
+                label Ime
+                input.form-control(type='text',name='ime', placeholder='Unesi ime')
+            .form-group
+                label Email
+                input.form-control(type='email',name='email', placeholder='Unesi email')
+            .form-group
+                label Poruka
+                input.form-control(name='poruka', placeholder='Unesi poruku')
+            button.btn.btn-default(type='submit') Pošalji
